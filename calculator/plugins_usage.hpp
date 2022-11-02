@@ -15,7 +15,7 @@ class PluginLoader{
 public:
     double getFunctionResult(std::string& functionName, double a);
     std::map<std::string, func> functionMap;
-    std::string const pluginsPath = "../plugins/";
+    std::string const pluginsPath = "../myLibs/";
     void LoadFunction(std::string const& functionName);
     bool constainsFunction(std::string const& functionName);
 };
