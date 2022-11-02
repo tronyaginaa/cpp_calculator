@@ -15,14 +15,14 @@ Operations::Operations(){
     priorityMap[')'] = 0;
 };
 
-int Operations::getPriority(char const& operationName){
+int Operations::getPriority(const char operationName){
     return priorityMap[operationName];
 }
 
-double Operations::getOperationResult(char const& operationName, double a, double b){
+double Operations::getOperationResult(const char operationName, double a, double b){
     return operationsMap[operationName](a,b);
 }
 
-bool Operations::containsOperation(const char &operationName){
+bool Operations::containsOperation(const char operationName){
     return operationsMap.find(operationName) != operationsMap.end();
 }

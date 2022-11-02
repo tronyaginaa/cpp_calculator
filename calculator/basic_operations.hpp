@@ -10,9 +10,9 @@ public:
     Operations();
     std::map<char const, int> priorityMap;
     std::map<char const, op> operationsMap;
-    int getPriority(char const& operationName);
-    double getOperationResult(char const& operationName, double a, double b);
-    bool containsOperation(char const& operationName);
+    int getPriority(const char operationName);
+    double getOperationResult(const char operationName, double a, double b);
+    bool containsOperation(const char operationName);
     ~Operations() {operationsMap.clear(); priorityMap.clear();}
 private:
 };
